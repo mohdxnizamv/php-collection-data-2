@@ -18,6 +18,7 @@ $karyawan = $rows;
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30" />
     <title>Daftar Mahasiswa</title>
 </head>
 
@@ -28,11 +29,10 @@ $karyawan = $rows;
         <tr>
             <th>No</th>
             <th>NAMA</th>
-            <th>ALAMAT</th>
             <th>UMUR</th>
+            <th>NEGERI</th>
             <th>JANTINA</th>
             <th><a href="tambah.php">tambah maklumat</a></th>
-
         </tr>
 
         <?php $i = 1;
@@ -40,8 +40,8 @@ $karyawan = $rows;
         <tr>
             <td><?= $i++; ?></td>
             <td><?= $m['nama']; ?></td>
-            <td><?= $m['alamat']; ?></td>
             <td><?= $m['umur']; ?></td>
+            <td><?= $m['negeri']; ?></td>
             <td id="e"><?= $m['jantina']; ?></td>
             <td>
                 <a href="">ubah</a> | <a href="">hapus</a>
@@ -51,7 +51,9 @@ $karyawan = $rows;
         <?php endforeach; ?>
     </table>
 
-
+    <div id="e">
+        Hakmilik Github. Selamat Belajar
+    </div>
 </body>
 
 </html>

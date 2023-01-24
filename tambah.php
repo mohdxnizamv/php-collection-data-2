@@ -35,7 +35,7 @@ if (isset($_POST['tambah'])) {
             </li>
             <li>
                 Negeri :
-                <select name="alamat">
+                <select name="negeri">
                     <option value="kuala lumpur">kuala lumpur</option>
                     <option value="putrajaya">putrajaya</option>
                     <option value="selangor">selangor</option>
@@ -56,6 +56,7 @@ if (isset($_POST['tambah'])) {
                 </label>
             </li>
             <li>
+                Jantina :
                 <select name="jantina">
                     <option value="lelaki">lelaki</option>
                     <option value="perempuan">perempuan</option>
